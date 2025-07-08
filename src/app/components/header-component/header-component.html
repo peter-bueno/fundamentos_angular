@@ -1,1 +1,27 @@
+
+<!--BINDING POR INTERPOLAÇÃO-->
+
+<!--interpolação de metodos-->
+<h1>{{ retornarTitulo() }}</h1>
+
+<!--interpolação de atributos-->
+{{ tituloHeader }}
+
 <p>header-component works!</p>
+
+
+<!--PROPERTY BINDING-->
+
+<!--Atribuindo texto diretamente a propriedade da tag h1-->
+<h1 [innerText]="'Meu Texto'"></h1>
+
+
+
+<!--Atribuindo valor da propriedade da classe à propriedade da tag h2-->
+<h2 [innerText]="tituloHeader"></h2>
+
+
+<!--Exemplo de uso em  botao de formularios-->
+<!--Poderiamos ter um botão submmit, que altera seu valor da propriedade [disabled] para true ou false. E de forma dinamica.-->
+
+<button [disabled]="habilitarBotao">Clique aqui</button>

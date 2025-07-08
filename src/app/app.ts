@@ -5,10 +5,11 @@ import { ContentComponent } from './components/content-component/content-compone
 
 @Component({
   selector: 'app-root',
+  //Para utilizarmos outros componentes no app-component,
+  //Devemos importa-los aqui:
   imports: [RouterOutlet,  HeaderComponent, ContentComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected title = 'Ola mundo!';
 }
